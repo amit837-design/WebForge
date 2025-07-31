@@ -5,6 +5,7 @@ import { FaCode } from "react-icons/fa";
 import FormPage from "../components/FormPage";
 import TemplateSelectModal from "../components/TemplateSelectModal";
 import { usePortfolioBuilder } from "../components/PortfolioBuilderContext";
+import BubbleImageReveal from "./BubbleImageReveal.jsx";
 
 const TheMainPage = () => {
   const [showForm, setShowForm] = useState(false);
@@ -63,9 +64,9 @@ const TheMainPage = () => {
           Builder
         </h2>
         <p className="mt-6 text-gray-400 text-base sm:text-lg leading-relaxed px-2">
-          Create stylish and functional portfolio websites in minutes — no
-          coding required. Choose from beautiful templates, customize with
-          gradients.
+          🎉 Create stylish & functional portfolios in minutes — zero coding!
+          <br />
+          Pick cool templates or add your own gradient magic! 🌈✨
         </p>
         <button
           onClick={() => setShowForm(true)}
@@ -75,17 +76,20 @@ const TheMainPage = () => {
         </button>
       </section>
 
-      <section className="flex justify-center mb-12 px-4">
-        <img
-          src="https://rstr.in/google/firebase-studio/WNjL77pmCVI"
-          alt="Firebase-style preview"
-          className="w-full max-w-5xl rounded-lg shadow-lg border border-gray-700"
-        />
+      <section className="flex justify-center mb-2 px-4">
+        <div className="relative w-full max-w-5xl">
+          <BubbleImageReveal />
+        </div>
       </section>
+
+      <p className="text-sm font-semibold text-white pt-0 pb-4 text-center mb-12">
+        ✨ Click on the image to see magical color transitions! ✨
+      </p>
 
       <section className="px-4 sm:px-6 md:px-8 max-w-5xl mx-auto text-gray-400 mb-20 leading-relaxed text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6 text-white pt-6">
-          Start building instantly, right from your browser
+          Start building instantly,
+          <br /> right from your browser🪄
         </h2>
         <p className="mb-4 text-base sm:text-lg">
           Go from filling a simple form to a fully downloadable website in just
